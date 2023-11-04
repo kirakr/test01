@@ -1,0 +1,168 @@
+
+.videobox{
+  display: block;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;/*--絶対値--*/
+    top: 100px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 1200px;/*--これを指定しないと崩れる--*/
+    position: relative;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 10px 2em;
+}
+
+.box :first-child {
+  align-self: center;
+}
+
+
+.makelogo{
+  display: block;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;/*--絶対値--*/
+    top: 500px;
+    right: 0px;
+    left: 900px;
+    margin: auto;
+    width: 300px;
+    cursor: pointer;
+}
+
+.text-mainphoneimag{
+  display: block;
+  z-index: 2;
+  position: absolute;/*--絶対値--*/
+  top: 0px;
+  right: 0px;
+  left: -800px;
+  margin: auto;
+  width: 370px;
+  height: auto;
+}
+
+
+.top-logo{
+  display: block;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3;
+    position: absolute;/*--絶対値--*/
+    top: -300px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 1200px;
+}
+
+
+.topichome{
+  display: block;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    margin: auto;
+    width: 100%;
+}
+
+.catchcopy{
+  display: block;
+  color: blue;
+    overflow: hidden;
+    z-index: 1;
+    margin: auto;
+    width: 1200px;
+}
+
+section.haikei_box{
+  display: flex;
+    height: 50vh;
+    z-index: 1;
+    position: absolute;/*--絶対値--*/
+    top: 1230px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 1200px;
+}
+
+section.haikei2_box{
+  display: flex;
+    height: 50vh;
+    z-index: 1;
+    position: absolute;/*--絶対値--*/
+    top: 1711px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 1200px;
+}
+
+.ticket-wall{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 20px;
+  gap: 4px;
+}
+
+.haikeitop{
+  display: block;
+  color: blue;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;/*--絶対値--*/
+    top: -200px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 94%;
+    justify-content: left;
+    writing-mode: vertical-rl;/*--縦書き--*/
+}
+
+.haikeimidasi{
+padding: 0.25em 0.5em;/*上下 左右の余白*/
+color: #494949;/*文字色*/
+background: transparent;/*背景透明に*/
+border-left: solid 5px #1c0077;/*左線*/
+text-align:left;
+width: 94%;
+}
+
+.cameraimage1{
+  position: absolute;
+  top: -40px;
+  right: 35px;
+  width: 40%; 
+} 
+
+.text-main {
+  width: 50%; 
+  line-height: 50px;
+} 
+.text-main2 {
+  width: 50%; 
+  line-height: 50px;
+  position:absolute;
+  right: -70px;
+} 
+
+
+section.catchcopy_box{
+  position: absolute;
+  top: 755px;
+  height: auto;
+}
+
+div.toping_box{
+  width: 1200px;
+}

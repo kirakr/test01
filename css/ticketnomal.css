@@ -1,0 +1,138 @@
+div.ticket-li{
+  display: grid;
+    z-index: 2;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    margin: auto;
+    width: 1200px;
+    height: 60vh;
+    justify-content:initial;
+}
+
+.ticket-nomal-make{
+  display: block;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;/*--絶対値--*/
+    top: 40px;
+    right: 300px;
+    left: 50px;
+    width: auto;
+    height: 260px;
+}
+
+.txt-make{
+position: absolute;
+top: 15px;
+right: 100px;
+width: 500px;
+height: auto;
+}
+
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.savebtn,
+.finbtn,
+a.savebtn{
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+button.savebtn{
+position: absolute;
+top: 180px;
+right: 399px;
+width: 200px;
+height: 120px;
+}
+
+button.finbtn{
+  position: absolute;
+  top: 180px;
+  right: 116px;
+  width: 200px;
+  height: 120px;
+  }
+
+.btnpanel{
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  right: 371px;
+}
+
+
+.finbtn{
+  position: absolute;
+  top: 350px;
+  right: 600px;
+}
+
+#qrOutput {
+  display: none;
+}
+.qrblock {
+  display: block;
+  text-align: center;
+   position: absolute;  
+   top: 180px;
+   right: 277px;
+}
+p.qrcomment {
+  background: #eff1f5;
+  text-align: center;
+  color: #707070;
+  padding: 7px 35px 8px;
+  border-radius: 9999px;
+  margin: 0 0 25px;
+  position: relative;
+}
+p.qrcomment:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #eff1f5;
+  z-index: 1;
+}
+#qrOutput {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  z-index: 9999;
+  position: absolute;
+  top: 76px;
+  right: 660px;
+}

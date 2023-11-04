@@ -1,0 +1,7 @@
+section.myprofrem{
+  display:flex;
+  flex-flow: column;
+}
+div.mypro{
+text-align: center;
+}

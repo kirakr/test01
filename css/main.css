@@ -1,0 +1,199 @@
+/*基本設定*/
+html{
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+  linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 100%;
+  margin:0px;
+  -webkit-text-size-adjust: 100%;/*スマホを横にした時、文字サイズが変わらなくなる*/
+  text-size-adjust: 100%;
+}
+
+
+
+p {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: bottom;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;/* 行間 */
+  color: #414141;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+section {
+  display: flex;
+  justify-content: center; 
+  position: relative;
+  width: 100%;
+}
+
+
+footer {
+  text-align: center;
+  position: static;
+  bottom: 0px;
+  background-color: #414141;
+  width: 100%;
+  height: 30px;
+}
+
+
+.list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center; 
+  align-items: center;
+  height: 200px;
+}
+
+.photo {
+  width: 100%;
+}
+  
+
+
+
+
+
+/*タイトルロゴに関する設定*/
+.top-logo{
+  display: block;
+  width: 100%;
+  z-index: 0;
+  margin:0 auto;/*中央揃え*/
+  height: 100vh;
+  overflow: hidden;
+  z-index: 9999;
+  margin: auto;
+}
+
+
+/*ヘッダー設定*/
+#fixed-header {
+  z-index: 9999;
+  position: fixed;
+  top: -70px;  
+  width: 100%;
+  height: 70px;
+  line-height: 25px;/* ヘッダー縦幅 */
+  font-size: 2em;
+  text-align: center;
+  color: #ff0000;
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  transition: .5s; /* アニメーションのタイミング */
+}
+#fixed-header.is-show {
+  top: 0;
+  z-index: 9999;
+}
+
+.nav-btn a {
+  text-decoration: none;/*全てのリンクから青線を消す*/
+  color: #000330;/*リンク文字色変更s*/
+  z-index: 9999;
+  }
+
+  ul {
+    list-style: none;/*全てのリストタグの点を非表示にする*/
+    z-index: 9999;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  a:hover {/*リンクに触ると色と大きさが変わる*/
+    color: rgb(71, 203, 255);
+    font-size: 1em;/*文字サイズ1倍*/
+    font-weight: bold;
+    z-index: 9999;
+  }
+  
+.header01 {
+  padding: 16px 24px;
+  background-color: #fafafa;
+  z-index: 9999;
+}
+
+.header01-logo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 9999;
+}
+
+.header01-list {
+  display: flex;
+  width: 94%;
+  justify-content: right;
+  gap: 62px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-right: 92px;
+  z-index: index 20;/* 重なり順 */
+  margin-left: auto;/* 端に寄せるマージンを100%以外にして余白を生み出す */
+
+}
+
+/*見出し設定*/
+h1{
+  color: rgb(56, 56, 56);
+  text-align:center;/*テキストの中央揃え*/
+  padding-right: 0px/*要素を右へずらす*/
+}
+
+.topic1 h2{
+  font-size:40px;
+  color: rgb(45, 101, 255);
+  letter-spacing: 0.5em;/* 行間 */
+  text-align:center;/*テキストの中央揃え*/
+  padding: 1rem 2rem;
+}
+
+.topic1{/*実質こっち*/
+  width: 1000px;/*要素の幅*/
+  margin:0 auto;/*中央揃え*/
+  border-top: 2px solid #414141;
+  border-bottom: 2px solid #414141;
+  position: relative;
+  line-height: 6.9px/* 文字縦幅 */
+}
+
+h3{
+  color: rgb(56, 56, 56);
+  font-size: 70px;
+  text-align:center;/*テキストの中央揃え*/
+  z-index: 9999;
+  color: #00054a;
+}
+
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+

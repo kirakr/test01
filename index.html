@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>思い出きっぷ</title>
+   <!--css読み取り-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+<!--フォント設定Googleのwebフォントを使用-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+<body>
+<!-- ヘッダー設定 -->
+  <header id="js-header" class="header"> <!-- idを設定 -->
+    <div class="top-logo">
+      <img src="images/mainlogo-2.PNG">
+    </div>
+    <div id="fixed-header">
+      <div class="nav-btn">
+        <nav class="header01-nav">
+          <ul class="header01-list">
+              <li class="header01-item"><a href="index.html">ホーム</a></li>
+              <li class="header01-item"><a href="about.html">運営者情報</a></li>
+              <li class="header01-item"><a href="make.html">切符を作る</a></li>
+              <li class="header01-item header01-item--contact"><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> 
+
+ <!--トップコンテンツ-->
+  <main>
+    <div class="topimg_box">
+      <div class="videobox">
+        <img src="images/ticket-nomal.PNG">
+      </div> 
+    </div>
+      <div class="makelogo">
+        <a href="make.html">
+           <img src="images/makelogo.PNG"onmouseover="this.src='images/makelogo-onmouse.PNG'" onmouseout="this.src='images/makelogo.PNG'">
+        </a>
+      </div>
+    </div>
+<!--サイトキャッチコピー-->
+    <section class="catchcopy_box">
+      <div class="text">
+        <div class="boxblue"></div>
+        <div class="catchcopy">
+          <h3>あの日の向こう側へ</h3>
+            <h1>このサイトは人生を生きていくなかでいつの間にか忘れてしまう大事な思い出を </h1>
+             <h1>新たなアプローチ方法で保存する事を提案するwebサイトです。</h1>
+        </div>
+      </div> 
+    </section>
+
+<!--コンテンツ1背景と目的-->
+    <section class="haikei_box">
+      <div class="text-main">
+        <h1 class="haikeimidasi">はじめに</h1>
+          <p class="txt-main">現在、世の中には思い出を残す方法として写真の撮影を行ったり<br>訪れた場所の切符や入場チケット等を残す方法がありますが<br> 写真は捨てにくかったりクラウドストレージ等に保存を行なっても<br>見返す機会が少ない事に気がつきました。<br>そこで私は、切符程度の小さなアナログの媒体に、画像や映像、音声等に<br>QRコードといったデジタルのデータを載せて引き出せるようにし<br>思い出きっぷという物を制作しました。</p>
+      </div>
+      <div class="text-main">
+         <img src="images/camera.PNG" alt="picture" class="cameraimage1">
+      </div>
+    </section>
+
+<!--コンテンツ2思い出きっぷについての説明-->
+    <section class="haikei2_box">
+      <div class="text-main2">
+          <h1 class="haikeimidasi">思い出きっぷとは</h1>
+             <p class="txt-main">思い出きっぷは普通にアルバムを見るのとちがって<br>qrコードを開くまでのワクワク感を楽しんだり<br>アナログとデジタルの両方のメリットを活用する事ができます。<br>きっと思い出きっぷは新たな体験価値を生み出してくれるでしょう。<br>このwebサイトではそれらを体験したり<br>実際に切符を作成する事が可能です。<br>さぁ思い出きっぷと共に新たな創造を始めましょう。</p>
+        <section class="savebtn">
+           <button onclick="location.href='make.html'">作ってみる</button>
+        </section>
+          <div class="text-mainphoneimag">
+            <img src="images/smartphone.PNG" alt="picture" class="text-mainphoneimag">
+          </div>
+          <div class="text-mainphoneimag">
+            <img src="images/smartphone.PNG" alt="picture" class="text-mainphoneimag">
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- <footer class="sitename">
+ <p>© omoidetikcetSite </p>
+ </footer> -->
+</body>
+
+
+
+  <!--javascript読み取り-->
+  <script src="javascript/js-header.js" defer></script>
+    <!-- ライブラリ読み込み -->
+    <script src="jquery-3.7.1.min.js"></script>
+</html>

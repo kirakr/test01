@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>思い出きっぷ</title>
+   <!--css読み取り-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+<!--フォント設定Googleのwebフォントを使用-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <!-- ヘッダー設定 -->
+  <header id="js-header" class="header"> <!-- idを設定 -->
+   
+
+<div class="nav-btn">
+    <nav class="header01-nav">
+        <ul class="header01-list">
+            <li class="header01-item"><a href="index.html">ホーム</a></li>
+            <li class="header01-item"><a href="about.html">運営者情報</a></li>
+            <li class="header01-item"><a href="make.html">切符を作る</a></li>
+            <li class="header01-item header01-item--contact"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+ <!-- メインページ　-->
+  <main>
+
+  <div class="text">
+   
+    
+     
+    <div class="topic1">
+      <h3>CONTACT</h3>
+       <h1>お問い合わせ</h1>
+    </div>
+
+    <div class="contact">
+      <h1>ご意見・ご感想等ありましたら、お手数おかけしますが</h1>
+      <h1>以下フォームにてご連絡いただけますと幸いです。</h1>
+        <form action="">
+          <table class="contact-table">
+            <tr>
+              <th class="contact-item">名前</th>
+              <td class="contact-body">
+                  <input type="text" name="名前" class="form-text" />
+              </td>
+              </tr>
+                <tr>
+                  <th class="contact-item">性別</th>
+                    <td class="contact-body">
+                      <label class="contact-sex">
+                          <input type="radio" name="性別" />
+                          <span class="contact-sex-txt">男</span>
+                      </label>
+                      <label class="contact-sex">
+                          <input type="radio" name="性別" />
+                          <span class="contact-sex-txt">女</span>
+                      </label>
+                      <label class="contact-sex">
+                          <input type="radio" name="性別" />
+                          <span class="contact-sex-txt">回答しない</span>
+                      </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">メール</th>
+                    <td class="contact-body">
+                        <input type="email" name="メール" class="form-text" />
+                    </td>
+                </tr>
+                <tr>
+                  <th class="contact-item">電話</th>
+                  <td class="contact-body">
+                      <input type="tel" name="電話" class="form-text" />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="contact-item">お問い合わせ内容</th>
+                  <td class="contact-body">
+                      <textarea name="問い合わせ" class="form-textarea"></textarea>
+                  </td>
+              </tr>
+            </table>
+            <input class="contact-submit" type="submit" value="送信" />
+        </form>
+      </div>
+    </div>
+
+  </main>
+<!-- 
+  <footer>
+    <p>© omoidetikcetSite </p>
+  </footer> -->
+</body>
+  <!--javascript読み取り-->
+  <script src="javascript/js-header.js" defer></script>
+    <!-- ライブラリ読み込み -->
+    <script src="jquery-3.7.1.min.js"></script>
+</html>

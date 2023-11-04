@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>思い出きっぷ</title>
+   <!--css読み取り-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/make.css">
+  <link rel="stylesheet" href="css/ticketnomal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.js"></script>
+<!--フォント設定Googleのwebフォントを使用-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <!-- ヘッダー設定 -->
+  <header id="js-header" class="header"> <!-- idを設定 -->
+
+<div class="nav-btn">
+    <nav class="header01-nav">
+        <ul class="header01-list">
+            <li class="header01-item"><a href="index.html">ホーム</a></li>
+            <li class="header01-item"><a href="about.html">運営者情報</a></li>
+            <li class="header01-item"><a href="make.html">切符を作る</a></li>
+            <li class="header01-item header01-item--contact"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+
+<main>
+   
+   
+
+  <div class="ticket-li">
+  <div id="imgbase">
+        <img src="images/ticket-nomal.PNG"alt="picture" class="ticket-nomal-make">
+        <p class="txt-make">思い出きっぷの作り方<br>①QRにしたいリンクをコピーします<br>②下のリンク貼り付けエリアにペーストしてください<br>③生成ボタンをクリックしてください</p>
+      <div class="qrblock">
+        <p class="qrcomment">リンク貼り付けエリア</p>
+        <input id="isbn" type="text" name="isbn" value=""> <button id="getqrInfo" class="btn btn-default">QRコードを生成する</button>
+      </div>
+    <div id="qrOutput">
+       <canvas id="qr"></canvas>
+      <div><img id="newImg"></div>
+    </div>
+  </div>
+    <form>
+      <button onclick="download()">画像にしてダウンロード</button>
+    </form>
+<!--     
+        <button type=“button” class="savebtn" onclick="location.href='https://www.sejuku.net'">QRを埋め込む</button>
+      <button type=“button” class="finbtn" onclick="location.href='https://www.sejuku.net'">保存する</button> -->
+  </div>
+ 
+  
+      
+ 
+</main>
+
+  <footer>
+    <p>© omoidetikcetSite </p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+</body>
+  <!--javascript読み取り-->
+  <script src="javascript/js-header.js" defer></script>
+    <!-- ライブラリ読み込み -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</html>
