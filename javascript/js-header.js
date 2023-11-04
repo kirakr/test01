@@ -31,10 +31,10 @@
        // QRコードをflexboxで表示
        document.getElementById('qrOutput').style.display = 'flex';
     })();
-  // // png出力用コード
-  // var cvs = document.getElementById("qr");
-  // var png = cvs.toDataURL();
-  // document.getElementById("newImg").src = png;
+  //png出力用コード
+  var cvs = document.getElementById("qr");
+　　 var png = cvs.toDataURL();
+ 　　document.getElementById("newImg").src = png;
   
   });
 
